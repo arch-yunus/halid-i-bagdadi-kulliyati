@@ -198,6 +198,15 @@
       font-size: 0.85rem;
       flex-shrink: 0;
     }
+    .hero-banner-img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
     footer {
       border-top: 1px solid var(--border-color);
       text-align: center;
@@ -230,6 +239,7 @@
   <main>
     <!-- TAB 1: Külliyat & Eserler -->
     <section id="tab-kulliyat" class="tab-content active">
+      <img src="../assets/banners/01_hero_kulliyat.jpg" alt="Mevlânâ Hâlid Külliyatı Banner" class="hero-banner-img" />
       <input type="text" class="search-input" id="eserSearch" placeholder="Eser, risâle veya haşiye ara..." oninput="filterCards('kulliyat-grid', this.value)" />
       <div class="grid" id="kulliyat-grid">
         <div class="card">
@@ -261,23 +271,27 @@
 
     <!-- TAB 2: Mektuplar -->
     <section id="tab-mektuplar" class="tab-content">
+      <img src="../assets/banners/05_yazma_eserler_ve_arsiv.jpg" alt="Mektuplar ve Yazmalar Banner" class="hero-banner-img" />
       <input type="text" class="search-input" id="mektupSearch" placeholder="Mektup no, muhatap veya konu ara (örn: Seyyid Tâhâ, adalet, Dehlevî)..." oninput="filterMektuplar(this.value)" />
       <div class="grid" id="mektuplar-grid"></div>
     </section>
 
     <!-- TAB 3: Altın Silsile -->
     <section id="tab-silsile" class="tab-content">
+      <img src="../assets/banners/03_altin_silsile.jpg" alt="Altın Silsile Banner" class="hero-banner-img" />
       <ul class="silsilah-list" id="silsile-list"></ul>
     </section>
 
     <!-- TAB 4: Hulefâ -->
     <section id="tab-hulefa" class="tab-content">
+      <img src="../assets/banners/04_salihie_dergahi.jpg" alt="Hulefâ ve Dergâhlar Banner" class="hero-banner-img" />
       <input type="text" class="search-input" id="hulefaSearch" placeholder="Halife ismi, merkez veya bölge ara (örn: İbn Âbidîn, Nehri, İstanbul)..." oninput="filterHulefa(this.value)" />
       <div class="grid" id="hulefa-grid"></div>
     </section>
 
     <!-- TAB 5: Istılahat & Lügat -->
     <section id="tab-lugat" class="tab-content">
+      <img src="../assets/banners/02_seyr_u_suluk.jpg" alt="Seyr u Sülûk ve Lügat Banner" class="hero-banner-img" />
       <input type="text" class="search-input" id="lugatSearch" placeholder="Kavram veya terim ara (örn: Letâif, Râbıta, Kesb)..." oninput="filterLugat(this.value)" />
       <div class="grid" id="lugat-grid"></div>
     </section>

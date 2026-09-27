@@ -1,5 +1,9 @@
 # Mevlânâ Hâlid-i Bağdâdî (1779–1827) Külliyatı, İrşad Ekolü ve Metin Korpusu
 
+<p align="center">
+  <img src="assets/banners/01_hero_kulliyat.jpg" alt="Mevlânâ Hâlid-i Bağdâdî Külliyatı Hero Banner" width="100%" />
+</p>
+
 > **"Allâh'a giden yollar, Rasûlullah (sallâllâhu aleyhi ve sellem) Efendimiz'in izini adım adım takip edenlerden başkasına kapalıdır. İstikamet, bin kerâmetten daha hayırlıdır. Kendini hiçbir hayırlı ameli bulunmayan müflis bir kul olarak görmedikçe hakikat kapısı aralanmaz."**  
 > — *Mevlânâ Ziyâüddîn Hâlid-i Bağdâdî (el-Mektûbât)*
 
@@ -33,6 +37,10 @@ Bölgenin önemli medreselerinde temel İslâmî ve aklî ilimleri ikmal etmek �
 
 ## 2. Hicaz Seyahati ve Hindistan (Delhi) Sülûku
 
+<p align="center">
+  <img src="assets/banners/02_seyr_u_suluk.jpg" alt="Seyr u Sülûk ve Hicret Seferi Banner" width="100%" />
+</p>
+
 Zâhirî ilimlerde akranlarının çok ötesinde bir şöhrete ulaşmasına rağmen kalbindeki mânevî arayış dinmemiş, 1805 yılında Hac farizasını yerine getirmek üzere Hicaz yolculuğuna çıkmıştır. Bu seyahat, onun hayatındaki tasavvufi kırılmanın ilk işaretlerini taşır. Medine-i Münevvere'de karşılaştığı Yemenli bir zâtın, zâhirî ulemanın üstünlük taslayıcı bakışından sıyrılıp teslimiyet göstermesi yönündeki uyarısı Hâlid-i Bağdâdî üzerinde derin bir intibah uyandırmıştır. Şam'a dönüşünde karşılaştığı ve Hindistan'dan geldiği rivayet edilen derviş Mirza Rahîmullah Azîmâbâdî, ona aradığı mürşidin Hindistan'ın Delhi (Cihânâbâd) şehrinde, Nakşibendiyye-Müceddidiyye silsilesinin kutbu Şâh Abdullah ed-Dehlevî (Şâh Gulâm Ali) olduğunu haber vermiştir.
 
 Bunun üzerine Mevlânâ Hâlid, bütün ilmî itibarını, medresesini ve memleketini geride bırakarak 1809 yılında meşakkatli bir kara yolculuğuyla İran ve Afganistan üzerinden Hindistan'a ulaşmıştır. Delhi'de Şâh Abdullah ed-Dehlevî'nin dergâhına intisap etmiş; medreselerde yıllarca kazandığı ilmî gurur ve pâyesini dergâhın helalarını temizlemek, fukaraya su taşımak ve nefsin enâniyetini kıran ağır riyazetlerle mahvetmiştir. Gösterdiği eşsiz kabiliyet, yüksek sebat ve teslimiyet neticesinde yalnızca on ay gibi kısa bir süre içerisinde seyr u sülûkun merhalelerini katetmiş; İmam Rabbânî Müceddid-i Elf-i Sânî'nin tesis ettiği Müceddidiyye yolu başta olmak üzere Nakşibendiyye, Kâdiriyye, Sühreverdiyye, Çiştiyye ve Kübreviyye tarikatlarından mutlak icazet ve hilafet alarak memleketine dönmekle vazifelendirilmiştir.
@@ -40,6 +48,10 @@ Bunun üzerine Mevlânâ Hâlid, bütün ilmî itibarını, medresesini ve memle
 ---
 
 ## 3. Hâlidiyye Ekolünün Nazari ve Amelî Omurgası
+
+<p align="center">
+  <img src="assets/banners/03_altin_silsile.jpg" alt="Altın Silsile (Silsile-i Aliyye) Banner" width="100%" />
+</p>
 
 Mevlânâ Hâlid-i Bağdâdî'nin kurduğu Hâlidiyye kolu, 19. yüzyılın başlarında Osmanlı coğrafyasında hızla yayılarak adeta bir tecdid hareketi vazifesi görmüştür. Ekolün zeminini oluşturan prensipler şunlardır:
 
@@ -153,6 +165,10 @@ Mevlânâ Hâlid-i Bağdâdî, İslâm tasavvuf tarihinde teşkilatlanma kabiliy
 
 ## 8. Vefatı, Vasiyetnâmesi ve Kabri
 
+<p align="center">
+  <img src="assets/banners/04_salihie_dergahi.jpg" alt="Şam Sâlihiye Dergâhı ve Kāsiyûn Dağı Banner" width="100%" />
+</p>
+
 1827 (Hicrî 1242) senesinde Şam şehrinde büyük bir tâun (veba) salgını baş göstermiştir. Salgında önce iki evladını kaybeden Mevlânâ Hâlid, ardından kendisi de veba hastalığına yakalanmıştır. Ecele teslim olmadan önce talebelerini toplayarak bizzat kaleme aldırdığı tarihi vasiyetnâmesinde şu hususları kaydetmiştir:
 
 > *"Kabrimin üzerine şatafatlı kubbeler ve debdebeli türbeler yapmayınız! Mezar taşıma hürmet ve mübalağa ifade eden hiçbir unvan, medih ve lakap yazdırmayınız! Sadece 'Cenâb-ı Hakk'ın rahmetine muhtaç fakir kul Hâlid' ifadesi kifayet eder.*  
@@ -166,6 +182,13 @@ Vefatının ardından vasiyeti gereği cenaze namazı İbn Âbidîn tarafından 
 ## 9. Depo Dizin ve Dosya Mimarisi
 
 ```text
+├── assets/
+│   └── banners/                            # Yüksek çözünürlüklü tematik külliyat bannerları
+│       ├── 01_hero_kulliyat.jpg            # Ana kütüphane ve yazma eser hero görseli
+│       ├── 02_seyr_u_suluk.jpg             # Hindistan ve Hicaz seyr u sülûk kervanı
+│       ├── 03_altin_silsile.jpg            # 30 pîrin Altın Silsile nur ağacı
+│       ├── 04_salihie_dergahi.jpg          # Şam Sâlihiye Dergâhı ve Kāsiyûn Dağı
+│       └── 05_yazma_eserler_ve_arsiv.jpg   # Tezhibli el yazmaları ve fermanlar
 ├── docs/
 │   ├── 01_biyografi_ve_seferler.md        # Şehrizor, Bağdat, Hicaz, Delhi ve Şam kronolojisi
 │   ├── 02_halidiyye_usul_ve_adabi.md       # Hatm-i Hâcegân, râbıta, murâkabe ve hafî zikir adabı
@@ -250,6 +273,10 @@ Vefatının ardından vasiyeti gereği cenaze namazı İbn Âbidîn tarafından 
 ---
 
 ## 10. Birincil Menâkıb/Tarih Kaynakları ve Akademik Literatür
+
+<p align="center">
+  <img src="assets/banners/05_yazma_eserler_ve_arsiv.jpg" alt="Yazma Eserler ve Arşiv Belgeleri Banner" width="100%" />
+</p>
 
 ### Birincil Dönem Kaynakları
 
