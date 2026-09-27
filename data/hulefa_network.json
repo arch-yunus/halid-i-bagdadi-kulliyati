@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mevlana_halid",
+    "name": "Mevlânâ Ziyâüddîn Hâlid-i Bağdâdî",
+    "death_year": 1827,
+    "center": "Şam (Sâlihiye)",
+    "coordinates": [33.535, 36.285],
+    "role": "Müceddid / Pîr",
+    "lineage_from": "Şâh Abdullah ed-Dehlevî",
+    "region": "Şam / Bağdat / Şehrizor"
+  },
+  {
+    "id": "seyyid_taha",
+    "name": "Seyyid Tâhâ-i Hakkârî",
+    "death_year": 1853,
+    "center": "Nehri (Şemdinli / Hakkâri)",
+    "coordinates": [37.310, 44.575],
+    "role": "Doğu Anadolu ve Kafkasya Kutbu",
+    "lineage_from": "Mevlânâ Hâlid-i Bağdâdî",
+    "region": "Doğu Anadolu / İran / Kafkasya"
+  },
+  {
+    "id": "ibn_abidin",
+    "name": "Allâme Seyyid Muhammed Emîn İbn Âbidîn",
+    "death_year": 1836,
+    "center": "Şam",
+    "coordinates": [33.513, 36.292],
+    "role": "Hanefî Mezhebi Reisi / Fakih",
+    "lineage_from": "Mevlânâ Hâlid-i Bağdâdî",
+    "region": "Suriye"
+  },
+  {
+    "id": "muhammed_el_hani",
+    "name": "Şeyh Muhammed b. Süleyman el-Hânî",
+    "death_year": 1862,
+    "center": "Şam",
+    "coordinates": [33.515, 36.298],
+    "role": "Hâlidiyye Tarihçisi ve Meşîhat Reisi",
+    "lineage_from": "Mevlânâ Hâlid-i Bağdâdî",
+    "region": "Suriye / Mısır"
+  },
+  {
+    "id": "ismail_narbandi",
+    "name": "Şeyh İsmâil en-Nârbendî",
+    "death_year": 1850,
+    "center": "Şam / Halep",
+    "coordinates": [36.202, 37.134],
+    "role": "Kıdemli Halife / Âsitâne Nazırı",
+    "lineage_from": "Mevlânâ Hâlid-i Bağdâdî",
+    "region": "Suriye"
+  },
+  {
+    "id": "ahmed_ervadi",
+    "name": "Şeyh Ahmed el-Ervâdî",
+    "death_year": 1858,
+    "center": "Trablusşam / Ervad / İstanbul",
+    "coordinates": [34.436, 35.849],
+    "role": "Sahil ve Payitaht Mürşidi",
+    "lineage_from": "Mevlânâ Hâlid-i Bağdâdî",
+    "region": "Lübnan / İstanbul"
+  },
+  {
+    "id": "abdullah_mekki",
+    "name": "Şeyh Abdullah el-Mekkî (Erzincânî)",
+    "death_year": 1845,
+    "center": "Mekke / Erzincan",
+    "coordinates": [21.422, 39.826],
+    "role": "Haremeyn Mürşidi",
+    "lineage_from": "Mevlânâ Hâlid-i Bağdâdî",
+    "region": "Hicaz / Doğu Anadolu"
+  },
+  {
+    "id": "yahya_mervezi",
+    "name": "Şeyh Yahyâ el-Mervezî (el-Mizûrî)",
+    "death_year": 1855,
+    "center": "İstanbul (Beşiktaş)",
+    "coordinates": [41.042, 29.008],
+    "role": "Payitaht ve Saray İrşad Reisi",
+    "lineage_from": "Mevlânâ Hâlid-i Bağdâdî",
+    "region": "İstanbul / Rumeli"
+  },
+  {
+    "id": "gumushanevi",
+    "name": "Ahmed Ziyâüddîn Gümüşhânevî",
+    "death_year": 1893,
+    "center": "İstanbul (Cağaloğlu)",
+    "coordinates": [41.011, 28.975],
+    "role": "Hadis İhyâcısı / Gümüşhânevî Ekolü Pîri",
+    "lineage_from": "Ahmed el-Ervâdî",
+    "region": "İstanbul / Anadolu / Kafkasya"
+  },
+  {
+    "id": "sibgatullah_arvasi",
+    "name": "Seyyid Sıbgatullah Arvâsî (Gavs-ı Hîzânî)",
+    "death_year": 1870,
+    "center": "Hizan (Bitlis)",
+    "coordinates": [38.225, 42.420],
+    "role": "Hizan Havzası Pîri",
+    "lineage_from": "Seyyid Tâhâ-i Hakkârî",
+    "region": "Doğu Anadolu"
+  },
+  {
+    "id": "imam_samil",
+    "name": "İmâm Şâmil ed-Dağıstânî",
+    "death_year": 1871,
+    "center": "Dağıstan / Çeçenistan / Medine",
+    "coordinates": [42.185, 47.103],
+    "role": "Kafkasya Gazavat Lideri / Mücahid",
+    "lineage_from": "Seyyid Cemâleddîn & Seyyid Tâhâ",
+    "region": "Kafkasya"
+  },
+  {
+    "id": "abdurrahman_tagi",
+    "name": "Mevlânâ Abdurrahman et-Tâgî",
+    "death_year": 1886,
+    "center": "Nurşin (Bitlis)",
+    "coordinates": [38.560, 41.970],
+    "role": "Nurşin Medreseleri Kurucusu",
+    "lineage_from": "Seyyid Sıbgatullah Arvâsî",
+    "region": "Doğu Anadolu"
+  }
+]

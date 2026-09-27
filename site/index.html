@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mevlânâ Hâlid-i Bağdâdî Külliyatı ve Metin Korpusu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-card: #21262d;
+      --border-color: #30363d;
+      --text-main: #c9d1d9;
+      --text-heading: #f0f6fc;
+      --text-muted: #8b949e;
+      --gold: #d4af37;
+      --gold-light: #f3e5ab;
+      --accent: #238636;
+      --accent-hover: #2ea043;
+      --arabic-font: 'Amiri', serif;
+    }
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: #f1f5f9;
+      --border-color: #e2e8f0;
+      --text-main: #334155;
+      --text-heading: #0f172a;
+      --text-muted: #64748b;
+      --gold: #b45309;
+      --gold-light: #78350f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+      border-bottom: 2px solid var(--gold);
+      padding: 2.5rem 1rem 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+    .arabic-title {
+      font-family: var(--arabic-font);
+      font-size: 2.4rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+      direction: rtl;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      color: var(--text-heading);
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.4rem;
+    }
+    .quote-box {
+      max-width: 800px;
+      margin: 1.5rem auto 0;
+      padding: 1rem 1.5rem;
+      background-color: rgba(212, 175, 55, 0.08);
+      border-left: 4px solid var(--gold);
+      border-radius: 4px;
+      font-style: italic;
+      font-size: 0.92rem;
+      color: var(--gold-light);
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+    nav {
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1rem;
+      flex-wrap: wrap;
+    }
+    .nav-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .nav-btn:hover, .nav-btn.active {
+      color: var(--gold);
+      background-color: var(--bg-card);
+    }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    /* Cards and Grids */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
+    .card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover { transform: translateY(-3px); border-color: var(--gold); }
+    .card-title {
+      color: var(--text-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .badge {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .arabic-text {
+      font-family: var(--arabic-font);
+      direction: rtl;
+      font-size: 1.25rem;
+      color: var(--gold-light);
+      margin: 0.75rem 0;
+      line-height: 1.8;
+      border-right: 3px solid var(--gold);
+      padding-right: 0.75rem;
+    }
+    .search-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-heading);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      outline: none;
+    }
+    .search-input:focus { border-color: var(--gold); }
+    .silsilah-list { list-style: none; counter-reset: silsile-counter; }
+    .silsilah-item {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+      gap: 1rem;
+    }
+    .silsilah-num {
+      background: var(--gold);
+      color: #000;
+      font-weight: bold;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    footer {
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="theme-toggle" id="themeToggle">🌓 Tema Değiştir</button>
+    <div class="arabic-title">مَوْلانَا خَالِد الْبَغْدَادِيّ الشَّهْرَزُورِيّ</div>
+    <h1>Mevlânâ Hâlid-i Bağdâdî Külliyatı</h1>
+    <div class="subtitle">19. Yüzyıl Nakşibendiyye-Müceddidiyye-Hâlidiyye Ekolü Açık Kaynak Korpusu</div>
+    <div class="quote-box">
+      "İstikamet, bin kerâmetten daha hayırlıdır. Allâh'a giden yollar, Rasûlullah'ın (s.a.v.) izini adım adım takip edenlerden başkasına kapalıdır."
+    </div>
+  </header>
+
+  <nav>
+    <button class="nav-btn active" onclick="switchTab('tab-kulliyat')">📖 Külliyat & Eserler</button>
+    <button class="nav-btn" onclick="switchTab('tab-mektuplar')">✉️ Buğyetü'l-Vâcid (Mektûbât)</button>
+    <button class="nav-btn" onclick="switchTab('tab-silsile')">⛓️ Altın Silsile (30 Pîr)</button>
+    <button class="nav-btn" onclick="switchTab('tab-hulefa')">👥 Hulefâ & Ağ Haritası</button>
+    <button class="nav-btn" onclick="switchTab('tab-lugat')">📚 Istılahat & Lügat</button>
+  </nav>
+
+  <main>
+    <!-- TAB 1: Külliyat & Eserler -->
+    <section id="tab-kulliyat" class="tab-content active">
+      <input type="text" class="search-input" id="eserSearch" placeholder="Eser, risâle veya haşiye ara..." oninput="filterCards('kulliyat-grid', this.value)" />
+      <div class="grid" id="kulliyat-grid">
+        <div class="card">
+          <div class="card-title">el-Mektûbât (Buğyetü'l-Vâcid) <span class="badge">Tasavvuf & İrşad</span></div>
+          <p>Mevlânâ Hâlid'in halifelerine, Osmanlı ulemasına, vezirlerine ve valilere gönderdiği 200'den fazla mektubun anayasa niteliğindeki külliyatı.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Risâle fî Tahkîki'r-Râbıta <span class="badge">Usûl & Müdafaa</span></div>
+          <p>Râbıtanın Kur'ân, Sünnet, Sahabe icması ve Hanefî/Şâfiî fıkhı açısından şer'î meşruiyetini ispat eden tahkik risalesi.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Risâle fi'l-Kazâ ve'l-Kader <span class="badge">Kelâm & Akâid</span></div>
+          <p>Cüz'î irade, kesb teorisi, kaza-i muallak ve mübrem dengesini Ehl-i Sünnet omurgasında inceleyen felsefî-kelâmî şaheser.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Dîvân-ı Mevlânâ Hâlid <span class="badge">Tasavvufî Şiir</span></div>
+          <p>Farsça, Arapça ve Kürtçe dillerinde yazılmış; na't-ı şerifler, tevhidler, Şâh Dehlevî medhiyeleri ve derin vuslat kasideleri.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Cilâü'l-Kulûb <span class="badge">Zikir & Tezkiye</span></div>
+          <p>Kalbin mâsivâdan tasfiyesi, hafî zikir disiplini, nefy ü isbât ve günlük vird tertiplerini beyan eden sülûk rehberi.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Hâşiye 'alâ Hâşiyeti's-Siyâlkûtî <span class="badge">Mantık & Münazara</span></div>
+          <p>Akâid-i Adudiyye Siyâlkûtî haşiyesi üzerine düşülen, kavram ve tasdik nazariyesini tahlil eden ta'likat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: Mektuplar -->
+    <section id="tab-mektuplar" class="tab-content">
+      <input type="text" class="search-input" id="mektupSearch" placeholder="Mektup no, muhatap veya konu ara (örn: Seyyid Tâhâ, adalet, Dehlevî)..." oninput="filterMektuplar(this.value)" />
+      <div class="grid" id="mektuplar-grid"></div>
+    </section>
+
+    <!-- TAB 3: Altın Silsile -->
+    <section id="tab-silsile" class="tab-content">
+      <ul class="silsilah-list" id="silsile-list"></ul>
+    </section>
+
+    <!-- TAB 4: Hulefâ -->
+    <section id="tab-hulefa" class="tab-content">
+      <input type="text" class="search-input" id="hulefaSearch" placeholder="Halife ismi, merkez veya bölge ara (örn: İbn Âbidîn, Nehri, İstanbul)..." oninput="filterHulefa(this.value)" />
+      <div class="grid" id="hulefa-grid"></div>
+    </section>
+
+    <!-- TAB 5: Istılahat & Lügat -->
+    <section id="tab-lugat" class="tab-content">
+      <input type="text" class="search-input" id="lugatSearch" placeholder="Kavram veya terim ara (örn: Letâif, Râbıta, Kesb)..." oninput="filterLugat(this.value)" />
+      <div class="grid" id="lugat-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Mevlânâ Ziyâüddîn Hâlid-i Bağdâdî Külliyatı Metin Korpusu & Araştırma Projesi &bull; MIT Lisansı</p>
+  </footer>
+
+  <script>
+    // Theme Switcher
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const target = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', target);
+    });
+
+    // Tab Navigation
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // Data Loaders
+    let lettersData = [];
+    let hulefaData = [];
+    let glossaryData = [];
+
+    const silsileArray = [
+      "Hz. Muhammed Mustafâ (sallâllâhu aleyhi ve sellem)", "Hz. Ebû Bekir Sıddîk (r.a.)", "Selmân-ı Fârisî (r.a.)",
+      "Kāsım b. Muhammed b. Ebî Bekir (r.a.)", "İmâm Câ'fer-i Sâdık (r.a.)", "Bâyezîd-i Bistâmî (k.s.)",
+      "Ebü'l-Hasan Harakānî (k.s.)", "Ebû Ali Fârmedî (k.s.)", "Yûsuf el-Hemedânî (k.s.)",
+      "Abdülhâlik-ı Gucdüvânî (k.s.)", "Ârif-i Rîvegerî (k.s.)", "Mahmûd İncîr-Fagnevî (k.s.)",
+      "Ali Râmîtenî (k.s.)", "Muhammed Bâbâ Semmâsî (k.s.)", "Seyyid Emîr Külâl (k.s.)",
+      "Şâh-ı Nakşibend Bahâeddin (k.s.)", "Alâüddin Attâr (k.s.)", "Yâkūb-i Çerhî (k.s.)",
+      "Hâce Ubeydullāh-ı Ahrâr (k.s.)", "Muhammed Zâhid (k.s.)", "Derviş Muhammed (k.s.)",
+      "Hâcegî Muhammed Emkenekî (k.s.)", "Muhammed Bâkī-Billâh (k.s.)", "İmam-ı Rabbânî Müceddid-i Elf-i Sânî (k.s.)",
+      "Muhammed Ma'sûm Fârûkī (k.s.)", "Şeyh Seyfeddin Ârif (k.s.)", "Seyyid Nûr Muhammed Bedâyûnî (k.s.)",
+      "Şemseddin Mazhar Cân-ı Cânân (k.s.)", "Şâh Abdullah ed-Dehlevî (k.s.)", "Mevlânâ Ziyâüddîn Hâlid-i Bağdâdî (k.s.)"
+    ];
+
+    function renderSilsile() {
+      const list = document.getElementById('silsile-list');
+      list.innerHTML = silsileArray.map((name, idx) => `
+        <li class="silsilah-item">
+          <span class="silsilah-num">${idx + 1}</span>
+          <strong>${name}</strong>
+        </li>
+      `).join('');
+    }
+
+    async function initData() {
+      renderSilsile();
+      try {
+        const [lRes, hRes, gRes] = await Promise.all([
+          fetch('../data/letters.json'),
+          fetch('../data/hulefa_network.json'),
+          fetch('../data/glossary.json')
+        ]);
+        lettersData = await lRes.json();
+        hulefaData = await hRes.json();
+        glossaryData = await gRes.json();
+      } catch (e) {
+        console.log("Local fallback data used.");
+      }
+      renderMektuplar(lettersData);
+      renderHulefa(hulefaData);
+      renderLugat(glossaryData);
+    }
+
+    function renderMektuplar(data) {
+      const grid = document.getElementById('mektuplar-grid');
+      grid.innerHTML = data.map(m => `
+        <div class="card">
+          <div class="card-title">Mektup ${m.id}: ${m.recipient} <span class="badge">${m.category}</span></div>
+          <div class="arabic-text">${m.arabic_excerpt}</div>
+          <p><strong>Konu:</strong> ${m.topic}</p>
+          <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">${m.summary}</p>
+        </div>
+      `).join('');
+    }
+
+    function renderHulefa(data) {
+      const grid = document.getElementById('hulefa-grid');
+      grid.innerHTML = data.map(h => `
+        <div class="card">
+          <div class="card-title">${h.name} <span class="badge">${h.role}</span></div>
+          <p><strong>Merkez:</strong> ${h.center} (${h.region})</p>
+          <p><strong>Vefat:</strong> ${h.death_year}</p>
+          <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.88rem;"><strong>İntisap:</strong> ${h.lineage_from}</p>
+        </div>
+      `).join('');
+    }
+
+    function renderLugat(data) {
+      const grid = document.getElementById('lugat-grid');
+      grid.innerHTML = data.map(g => `
+        <div class="card">
+          <div class="card-title">${g.term} <span class="badge">${g.category}</span></div>
+          <div class="arabic-text" style="font-size: 1.1rem; margin: 0.4rem 0;">${g.arabic}</div>
+          <p style="font-size: 0.92rem;">${g.definition}</p>
+        </div>
+      `).join('');
+    }
+
+    function filterCards(gridId, q) {
+      const cards = document.getElementById(gridId).getElementsByClassName('card');
+      const term = q.toLowerCase();
+      for (let c of cards) {
+        c.style.display = c.innerText.toLowerCase().includes(term) ? 'block' : 'none';
+      }
+    }
+
+    function filterMektuplar(q) {
+      const filtered = lettersData.filter(m => 
+        m.recipient.toLowerCase().includes(q.toLowerCase()) || 
+        m.topic.toLowerCase().includes(q.toLowerCase()) ||
+        m.summary.toLowerCase().includes(q.toLowerCase()) ||
+        String(m.id).includes(q)
+      );
+      renderMektuplar(filtered);
+    }
+
+    function filterHulefa(q) {
+      const filtered = hulefaData.filter(h => 
+        h.name.toLowerCase().includes(q.toLowerCase()) || 
+        h.center.toLowerCase().includes(q.toLowerCase()) ||
+        h.region.toLowerCase().includes(q.toLowerCase())
+      );
+      renderHulefa(filtered);
+    }
+
+    function filterLugat(q) {
+      const filtered = glossaryData.filter(g => 
+        g.term.toLowerCase().includes(q.toLowerCase()) || 
+        g.definition.toLowerCase().includes(q.toLowerCase())
+      );
+      renderLugat(filtered);
+    }
+
+    window.onload = initData;
+  </script>
+</body>
+</html>

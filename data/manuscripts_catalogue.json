@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ms_01",
+    "title": "Buğyetü'l-Vâcid fî Mektûbâti Hazreti Mevlânâ Hâlid",
+    "library": "Süleymaniye Yazma Eser Kütüphanesi",
+    "collection": "Esad Efendi",
+    "call_number": "1482",
+    "city": "İstanbul",
+    "leaf_count": 218,
+    "script_type": "Nesiḫ / Ta'lîḳ",
+    "notes": "Mevlânâ Hâlid'in kendi hayatında derlenen erken dönem mektup mecmuası."
+  },
+  {
+    "id": "ms_02",
+    "title": "Risâle fî Tahkîki'r-Râbıta",
+    "library": "Süleymaniye Yazma Eser Kütüphanesi",
+    "collection": "Hacı Mahmud Efendi",
+    "call_number": "2341",
+    "city": "İstanbul",
+    "leaf_count": 18,
+    "script_type": "Nesiḫ",
+    "notes": "İbn Âbidîn'in takriz ve haşiyesiyle birlikte istinsah edilen nüsha."
+  },
+  {
+    "id": "ms_03",
+    "title": "Dîvân-ı Mevlânâ Hâlid (Farsça-Arapça-Kürtçe)",
+    "library": "Millet Kütüphanesi",
+    "collection": "Ali Emîrî Manzum",
+    "call_number": "412",
+    "city": "İstanbul",
+    "leaf_count": 94,
+    "script_type": "Ta'lîḳ",
+    "notes": "Şiirlerin tam metnini ve şerh derkenarlarını ihtiva eder."
+  },
+  {
+    "id": "ms_04",
+    "title": "Hâşiye 'alâ Hâşiyeti's-Siyâlkûtî",
+    "library": "Zâhiriyye Kütüphanesi",
+    "collection": "Mecâmî'",
+    "call_number": "6210",
+    "city": "Şam",
+    "leaf_count": 64,
+    "script_type": "Ta'lîḳ",
+    "notes": "Mevlânâ Hâlid'in bizzat düştüğü tenkitli notlar."
+  },
+  {
+    "id": "ms_05",
+    "title": "Risâle fi'l-Kazâ ve'l-Kader",
+    "library": "Süleymaniye Yazma Eser Kütüphanesi",
+    "collection": "Yahya Tevfik",
+    "call_number": "154",
+    "city": "İstanbul",
+    "leaf_count": 22,
+    "script_type": "Nesiḫ",
+    "notes": "Kelâmî kıyasların açık şemalarla izah edildiği müstesna nüsha."
+  }
+]

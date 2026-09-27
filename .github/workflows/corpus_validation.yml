@@ -1,0 +1,49 @@
+name: Corpus Validation and Quality Checks
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Test Corpus Search Tool
+        run: |
+          python scripts/kulliyat_search.py --stats
+          python scripts/kulliyat_search.py "râbıta"
+          python scripts/kulliyat_search.py "istikamet"
+
+      - name: Test Concordance and Frequency Tool
+        run: |
+          python scripts/concordance.py --top 15
+          python scripts/concordance.py --kwic "feyiz"
+
+      - name: Test Hulefa Network & GeoJSON Generator
+        run: |
+          python scripts/hulefa_graph.py --mermaid
+          python scripts/hulefa_graph.py --geojson data/hulefa_map.geojson
+
+      - name: Test Corpus Export & Bundler
+        run: |
+          python scripts/export_corpus.py --output data/corpus_bundle.json
+
+      - name: Validate JSON Files Integrity
+        run: |
+          python -c "
+          import json, glob
+          for f in glob.glob('data/*.json') + glob.glob('data/*.geojson'):
+              with open(f, 'r', encoding='utf-8') as fh:
+                  json.load(fh)
+                  print(f'Valid JSON: {f}')
+          "

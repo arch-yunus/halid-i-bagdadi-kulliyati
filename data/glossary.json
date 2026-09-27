@@ -1,0 +1,74 @@
+[
+  {
+    "term": "Hafî Zikir",
+    "arabic": "الذكر الخفي",
+    "definition": "Dili damağa yapıştırıp lisanı devreden çıkararak nefes kontrolüyle kalbin ve letâifin derinliklerinde yapılan gizli zikir türü.",
+    "category": "Zikir Usûlü"
+  },
+  {
+    "term": "Râbıta-i Şerîfe",
+    "arabic": "الرابطة الشريفة",
+    "definition": "Sâlikin, zihnini mâsivâdan arındırıp kâmil mürşidin sîret ve suretini tefekkür ederek feyz-i ilâhîye ayna kılma ameliyesi.",
+    "category": "Seyr u Sülûk"
+  },
+  {
+    "term": "Hatm-i Hâcegân",
+    "arabic": "ختم الخواجكان",
+    "definition": "Nakşibendî büyüklerinin usûlü üzere cemaat halinde istiğfar, salavat, Fâtiha, İnşirah ve İhlâs sureleriyle icra edilen toplu zikir meclisi.",
+    "category": "Âdâb ve Vird"
+  },
+  {
+    "term": "Letâif-i Hamse",
+    "arabic": "اللطائف الخمسة",
+    "definition": "İnsanın mânevî yapısında bulunan Âlem-i Emr kaynaklı beş cevher: Kalb, Ruh, Sır, Hafî ve Ahfâ.",
+    "category": "Tasavvuf Felsefesi"
+  },
+  {
+    "term": "Hûş der-Dem",
+    "arabic": "هوش در دم",
+    "definition": "Her nefes alıp verişte Allah Teâlâ'dan gâfil olmamak, her nefesi şuur ve zikirle tüketmek (Kelimât-ı Kudsiyye'nin 1. esası).",
+    "category": "Kelimât-ı Kudsiyye"
+  },
+  {
+    "term": "Nazar ber-Kadem",
+    "arabic": "نظر بر قدم",
+    "definition": "Yürürken bakışlarını ayak ucuna hasredip gözü haramdan ve lüzumsuz manzaralardan koruma prensibi.",
+    "category": "Kelimât-ı Kudsiyye"
+  },
+  {
+    "term": "Halvet der-Encümen",
+    "arabic": "خلوت در انجمن",
+    "definition": "Halkın içinde ticaret, ilim ve cemiyet işleriyle meşgul olurken kalben dâimâ Hak ile beraber ve râbıtalı bulunmak.",
+    "category": "Kelimât-ı Kudsiyye"
+  },
+  {
+    "term": "Sefer der-Vatan",
+    "arabic": "سفر در وطن",
+    "definition": "İnsanın süflî beşerî sıfatlardan arınıp melekî ve kudsî ahlaka doğru kendi iç aleminde hicret etmesi.",
+    "category": "Kelimât-ı Kudsiyye"
+  },
+  {
+    "term": "Kesb",
+    "arabic": "الكسب",
+    "definition": "Ehl-i Sünnet kelâmında kulun cüz'î iradesini bir fiili yapmaya veya terk etmeye yöneltmesi; yaratmanın değil sorumluluğun zemini.",
+    "category": "Kelâm ve Akâid"
+  },
+  {
+    "term": "İrade-i Cüz'iyye",
+    "arabic": "الإرادة الجزئية",
+    "definition": "İnsana verilen, iki ihtimalden birini seçme kabiliyeti; mükellefiyet ve imtihanın temeli.",
+    "category": "Kelâm ve Akâid"
+  },
+  {
+    "term": "Mecmaü'l-Bahreyn",
+    "arabic": "مجمع البحرين",
+    "definition": "İki denizin birleştiği yer; tasavvuf ve medrese ıstılahında zâhirî şeriat ilimleriyle bâtınî mârifet ilimlerini şahsında cem eden allâme ve kutublar için kullanılan unvan.",
+    "category": "Istılah"
+  },
+  {
+    "term": "Müceddid",
+    "arabic": "المجدد",
+    "definition": "Her asrın başında İslâm dinini bid'atlerden arındırıp sünnet-i seniyye üzere dirilten kâmil peygamber vârisi.",
+    "category": "Kelâm ve Tarih"
+  }
+]

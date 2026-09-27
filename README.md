@@ -170,12 +170,16 @@ Vefatının ardından vasiyeti gereği cenaze namazı İbn Âbidîn tarafından 
 │   ├── 01_biyografi_ve_seferler.md        # Şehrizor, Bağdat, Hicaz, Delhi ve Şam kronolojisi
 │   ├── 02_halidiyye_usul_ve_adabi.md       # Hatm-i Hâcegân, râbıta, murâkabe ve hafî zikir adabı
 │   ├── 03_ulema_sehadetleri.md             # İbn Âbidîn, Âlûsî, es-Sindî ve dönem ulemasının takrizleri
-│   └── 04_sosyo_politik_donusum.md         # 19. yy Osmanlı coğrafyasında Hâlidiyye'nin tesiri
+│   ├── 04_sosyo_politik_donusum.md         # 19. yy Osmanlı coğrafyasında Hâlidiyye'nin tesiri
+│   ├── 05_halidiye_silsilesi_ve_altin_zincir.md # 30 pîrin Altın Silsile (Silsile-i Aliyye) dökümü
+│   └── 06_osmanli_devlet_yazismalari_ve_hatti_humayunlar.md # BOA Osmanlı arşiv vesikaları ve tahlili
 ├── metinler/
-│   ├── bugyetul_vacid/                     # Mektûbât'ın seçme metinleri (Arapça asılları ve tercümeler)
+│   ├── bugyetul_vacid/                     # Mektûbât'ın seçme metinleri ve fihristi
 │   │   ├── mektup_001_050.md
 │   │   ├── mektup_051_100.md
-│   │   └── mektup_101_150.md
+│   │   ├── mektup_101_150.md
+│   │   ├── mektup_151_200.md
+│   │   └── mektup_fihristi.md
 │   ├── divan/                              # Farsça, Arapça ve Kürtçe şiirlerin transkripsiyon ve şerhleri
 │   │   └── divan_muhteva_ve_gazeller.md
 │   ├── risaleler/
@@ -190,13 +194,24 @@ Vefatının ardından vasiyeti gereği cenaze namazı İbn Âbidîn tarafından 
 │   ├── seyyid_taha_hakkari.md              # Hayatı, icazetnamesi ve Kafkasya tesirleri
 │   ├── ibn_abidin.md                       # İbn Âbidîn ile mektuplaşmaları ve fetva müdafaaları
 │   ├── muhammed_el_hani.md                 # Hânî ailesi ve Hadâiku'l-Verdiyye metinleri
-│   └── diger_meshur_hulefa.md              # İsmail en-Nârbendî, Ervâdî, Mekkî, Gümüşhânevî vd.
-├── kaynakca/
-│   ├── birincil_kaynaklar.md               # El yazmaları, menâkıbnâmeler ve Osmanlı arşiv vesikaları
-│   └── akademik_literatur.md               # Modern tezler, monografiler ve uluslararası makaleler
+│   ├── diger_meshur_hulefa.md              # İsmail en-Nârbendî, Ervâdî, Mekkî, Gümüşhânevî vd.
+│   ├── osmanli_baskent_hulefasi_ve_gumushanevi.md # İstanbul dergâhları ve hadis hareketi
+│   └── kafkasya_ve_anadolu_hulefasi.md     # İmam Şâmil Gazavatı ve Nurşin/Arvas mektepleri
+├── data/
+│   ├── letters.json                        # Mektupların yapılandırılmış veritabanı
+│   ├── hulefa_network.json                 # Hulefâ ilişki ve coğrafi koordinat veritabanı
+│   ├── glossary.json                       # 150+ Tasavvuf ve kelâm kavram sözlüğü
+│   └── manuscripts_catalogue.json          # Dünya kütüphanelerindeki yazma nüshalar kataloğu
+├── site/
+│   └── index.html                          # İnteraktif modern web arayüzü ve korpus okuyucusu
 ├── scripts/
 │   ├── kulliyat_search.py                  # Korpus içi hızlı kavram/metin arama ve istatistik CLI aracı
-│   └── rabita_index.py                     # Tematik ve kavramsal fihrist çıkarıcı
+│   ├── rabita_index.py                     # Tematik ve kavramsal fihrist çıkarıcı
+│   ├── export_corpus.py                    # Korpusu tekil JSON paketine dışa aktarma aracı
+│   ├── hulefa_graph.py                     # Hulefâ ağı Mermaid ve GeoJSON harita üreticisi
+│   └── concordance.py                      # KWIC bağlamsal konkordans ve frekans analizörü
+├── .github/workflows/
+│   └── corpus_validation.yml               # Otomatik CI/CD doğrulama ve test iş akışı
 └── LICENSE
 ```
 
@@ -208,9 +223,13 @@ Vefatının ardından vasiyeti gereği cenaze namazı İbn Âbidîn tarafından 
 | **Usûl & Âdâb** | [02_halidiyye_usul_ve_adabi.md](docs/02_halidiyye_usul_ve_adabi.md) | Kelimât-ı Kudsiyye, letâif mertebeleri, murâkabe ve hatim usûlü |
 | **Ulema Şehadetleri** | [03_ulema_sehadetleri.md](docs/03_ulema_sehadetleri.md) | İbn Âbidîn, Âlûsî, Şâh Dehlevî ve Osmanlı Şeyhülislâmlarının takrizleri |
 | **Tarihî Dönüşüm** | [04_sosyo_politik_donusum.md](docs/04_sosyo_politik_donusum.md) | 19. yy Osmanlı ve İslâm coğrafyasındaki tecdid ve direnç dalgası |
+| **Altın Silsile** | [05_halidiye_silsilesi_ve_altin_zincir.md](docs/05_halidiye_silsilesi_ve_altin_zincir.md) | Hz. Peygamber'den (s.a.v.) Mevlânâ Hâlid'e 30 pîrin detaylı şeceresi |
+| **Osmanlı Arşivleri** | [06_osmanli_devlet_yazismalari_ve_hatti_humayunlar.md](docs/06_osmanli_devlet_yazismalari_ve_hatti_humayunlar.md) | BOA Hatt-ı Hümâyûnları, vilayet tahriratı ve devlet raporları |
 | **Mektuplar (1–50)** | [mektup_001_050.md](metinler/bugyetul_vacid/mektup_001_050.md) | Halifelere gönderilen seyr u sülûk ve istikamet talimatları |
 | **Mektuplar (51–100)** | [mektup_051_100.md](metinler/bugyetul_vacid/mektup_051_100.md) | Osmanlı devlet ricali, vezirler ve valilere adalet nasihatleri |
 | **Mektuplar (101–150)** | [mektup_101_150.md](metinler/bugyetul_vacid/mektup_101_150.md) | Nefis tezkiyesi, ihvan uhuvveti ve mânevî vasiyetler |
+| **Mektuplar (151–200)** | [mektup_151_200.md](metinler/bugyetul_vacid/mektup_151_200.md) | Fıkıh meseleleri, aile ahlâkı ve silsileye sadakat |
+| **Mektup Fihristi** | [mektup_fihristi.md](metinler/bugyetul_vacid/mektup_fihristi.md) | Muhataplarına ve konularına göre genel mektup dizini |
 | **Dîvân** | [divan_muhteva_ve_gazeller.md](metinler/divan/divan_muhteva_ve_gazeller.md) | Farsça, Arapça ve Kürtçe na't, medhiye ve gazel tahlilleri |
 | **Râbıta Risalesi** | [risale_fi_tahkikir_rabita.md](metinler/risaleler/risale_fi_tahkikir_rabita.md) | Râbıtanın âyet, hadis ve fıkhî temellerle ispatı |
 | **Kaza ve Kader** | [risale_fil_kaza_vel_kader.md](metinler/risaleler/risale_fil_kaza_vel_kader.md) | Ehl-i Sünnet kelâmı, cüz'î irade ve kesb tahlili |
@@ -221,9 +240,12 @@ Vefatının ardından vasiyeti gereği cenaze namazı İbn Âbidîn tarafından 
 | **Seyyid Tâhâ-i Hakkârî** | [seyyid_taha_hakkari.md](hulefa/seyyid_taha_hakkari.md) | Nehri mürşidi, Kafkasya ve Doğu Anadolu tesirleri |
 | **Allâme İbn Âbidîn** | [ibn_abidin.md](hulefa/ibn_abidin.md) | Hanefî imâmının intisabı ve *Sellü'l-Hüsâm* müdafaası |
 | **Muhammed el-Hânî** | [muhammed_el_hani.md](hulefa/muhammed_el_hani.md) | Şam meşîhatı ve *Hadâiku'l-Verdiyye* tarihi |
+| **Payitaht & Gümüşhânevî** | [osmanli_baskent_hulefasi_ve_gumushanevi.md](hulefa/osmanli_baskent_hulefasi_ve_gumushanevi.md) | İstanbul dergâhları, Hadis hareketi ve iktisadî sandıklar |
+| **Kafkasya & Doğu Anadolu** | [kafkasya_ve_anadolu_hulefasi.md](hulefa/kafkasya_ve_anadolu_hulefasi.md) | İmam Şâmil Gazavatı, Hizan, Nurşin ve Arvas havzaları |
 | **Diğer Hulefâ** | [diger_meshur_hulefa.md](hulefa/diger_meshur_hulefa.md) | İsmâil en-Nârbendî, Ervâdî, Gümüşhânevî, Mekkî silsilesi |
 | **Birincil Kaynaklar** | [birincil_kaynaklar.md](kaynakca/birincil_kaynaklar.md) | El yazmaları, matbu neşirler ve BOA Osmanlı Arşiv vesikaları |
 | **Akademik Literatür** | [akademik_literatur.md](kaynakca/akademik_literatur.md) | Ulusal ve uluslararası tezler, kitaplar ve makaleler |
+| **İnteraktif Web Portalı** | [site/index.html](site/index.html) | Tarayıcıda çalışan tam donanımlı görsel korpus ve arama arayüzü |
 
 ---
 

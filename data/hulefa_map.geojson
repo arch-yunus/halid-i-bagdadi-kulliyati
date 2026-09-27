@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mevlana_halid",
+        "name": "Mevlânâ Ziyâüddîn Hâlid-i Bağdâdî",
+        "death_year": 1827,
+        "center": "Şam (Sâlihiye)",
+        "role": "Müceddid / Pîr",
+        "region": "Şam / Bağdat / Şehrizor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.285,
+          33.535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "seyyid_taha",
+        "name": "Seyyid Tâhâ-i Hakkârî",
+        "death_year": 1853,
+        "center": "Nehri (Şemdinli / Hakkâri)",
+        "role": "Doğu Anadolu ve Kafkasya Kutbu",
+        "region": "Doğu Anadolu / İran / Kafkasya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.575,
+          37.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ibn_abidin",
+        "name": "Allâme Seyyid Muhammed Emîn İbn Âbidîn",
+        "death_year": 1836,
+        "center": "Şam",
+        "role": "Hanefî Mezhebi Reisi / Fakih",
+        "region": "Suriye"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.292,
+          33.513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "muhammed_el_hani",
+        "name": "Şeyh Muhammed b. Süleyman el-Hânî",
+        "death_year": 1862,
+        "center": "Şam",
+        "role": "Hâlidiyye Tarihçisi ve Meşîhat Reisi",
+        "region": "Suriye / Mısır"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.298,
+          33.515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ismail_narbandi",
+        "name": "Şeyh İsmâil en-Nârbendî",
+        "death_year": 1850,
+        "center": "Şam / Halep",
+        "role": "Kıdemli Halife / Âsitâne Nazırı",
+        "region": "Suriye"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.134,
+          36.202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ahmed_ervadi",
+        "name": "Şeyh Ahmed el-Ervâdî",
+        "death_year": 1858,
+        "center": "Trablusşam / Ervad / İstanbul",
+        "role": "Sahil ve Payitaht Mürşidi",
+        "region": "Lübnan / İstanbul"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.849,
+          34.436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "abdullah_mekki",
+        "name": "Şeyh Abdullah el-Mekkî (Erzincânî)",
+        "death_year": 1845,
+        "center": "Mekke / Erzincan",
+        "role": "Haremeyn Mürşidi",
+        "region": "Hicaz / Doğu Anadolu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.826,
+          21.422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yahya_mervezi",
+        "name": "Şeyh Yahyâ el-Mervezî (el-Mizûrî)",
+        "death_year": 1855,
+        "center": "İstanbul (Beşiktaş)",
+        "role": "Payitaht ve Saray İrşad Reisi",
+        "region": "İstanbul / Rumeli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.008,
+          41.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gumushanevi",
+        "name": "Ahmed Ziyâüddîn Gümüşhânevî",
+        "death_year": 1893,
+        "center": "İstanbul (Cağaloğlu)",
+        "role": "Hadis İhyâcısı / Gümüşhânevî Ekolü Pîri",
+        "region": "İstanbul / Anadolu / Kafkasya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.975,
+          41.011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sibgatullah_arvasi",
+        "name": "Seyyid Sıbgatullah Arvâsî (Gavs-ı Hîzânî)",
+        "death_year": 1870,
+        "center": "Hizan (Bitlis)",
+        "role": "Hizan Havzası Pîri",
+        "region": "Doğu Anadolu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.42,
+          38.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "imam_samil",
+        "name": "İmâm Şâmil ed-Dağıstânî",
+        "death_year": 1871,
+        "center": "Dağıstan / Çeçenistan / Medine",
+        "role": "Kafkasya Gazavat Lideri / Mücahid",
+        "region": "Kafkasya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.103,
+          42.185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "abdurrahman_tagi",
+        "name": "Mevlânâ Abdurrahman et-Tâgî",
+        "death_year": 1886,
+        "center": "Nurşin (Bitlis)",
+        "role": "Nurşin Medreseleri Kurucusu",
+        "region": "Doğu Anadolu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.97,
+          38.56
+        ]
+      }
+    }
+  ]
+}

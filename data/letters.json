@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "recipient": "Şeyh İsmâil en-Nârbendî",
+    "location": "Şam / Şehrizor",
+    "topic": "İstikamet, şeriat azîmeti ve sâliklerin terbiyesi",
+    "arabic_excerpt": "اعلم يا أخي أن الاستقامة عين الكرامة، بل هي فوق ألف كرامة. والتمسك بالكتاب والسنة هو الأصل الأصيل.",
+    "summary": "İstikamet bizzat kerâmetin kendisidir; müridlere evvela Ehl-i Sünnet akâidi ve fıkıh öğretilmelidir.",
+    "category": "Seyr u Sülûk"
+  },
+  {
+    "id": 12,
+    "recipient": "Seyyid Tâhâ-i Hakkârî",
+    "location": "Nehri / Hakkâri",
+    "topic": "Fukaranın himayesi, tevazu ve zâhir ulemasıyla münakaşadan sakınma",
+    "arabic_excerpt": "يا قرة عيني السيد طه، اجعل نفسك أخس الخلائق، واخدم الفقراء والمساكين بيدك.",
+    "summary": "İrşad yaparken nefsi bütün mahlûkattan aşağı bilmek, gariplere bizzat hizmet etmek ve ulemaya hürmet göstermek.",
+    "category": "İrşad ve Ahlak"
+  },
+  {
+    "id": 24,
+    "recipient": "Şeyh Abdullah el-Mekkî",
+    "location": "Mekke-i Mükerreme",
+    "topic": "Harem-i Şerîf zikir halkaları ve hacılara şefkat",
+    "arabic_excerpt": "اشكر نعمة مجاورة بيت الله الحرام بالذكر الدائم، وتحمل مشاق الحجاج والغرباء.",
+    "summary": "Beytullah civarında kesintisiz zikir ve murakabe; dünyanın dört bir yanından gelen hacıların eziyetlerine sabır.",
+    "category": "Âdâb"
+  },
+  {
+    "id": 37,
+    "recipient": "Şeyh Ahmed el-Ervâdî",
+    "location": "Trablusşam / Lübnan",
+    "topic": "Bid'atlerin reddi, vakarlı duruş ve dervişliği menfaate alet etmeme",
+    "arabic_excerpt": "احذروا من أهل البدع والضلال، وكونوا مع أهل الحق رحماء، ولا تجعلوا المشيخة وسيلة للدنيا.",
+    "summary": "Hurafelere karşı ilim ve hikmetle durmak, dervişliği dünyalık kazanç kapısı yapmaktan şiddetle kaçınmak.",
+    "category": "Tebliğ ve İstiğnâ"
+  },
+  {
+    "id": 45,
+    "recipient": "Şeyh Muhammed el-Hânî",
+    "location": "Şam",
+    "topic": "Tarikat adabının kayda geçirilmesi ve ihlas",
+    "arabic_excerpt": "قيدوا آداب هذه الطريقة العلية ومناقب رجالاتها حتى لا تضيع الأصول في قابل الأيام.",
+    "summary": "Silsile büyüklerinin menâkıb ve erkânını kitaplaştırmak ve her satırda nefis hissesinden teberri etmek.",
+    "category": "Tarih ve Usûl"
+  },
+  {
+    "id": 58,
+    "recipient": "Bağdat Valisi Dâvud Paşa",
+    "location": "Bağdat",
+    "topic": "Adalet, mazlumun ahı, rüşvet ve zulümle mücadele",
+    "arabic_excerpt": "إن هذه الولاية أمانة وامتحان، فاتق دعوة المظلوم ودمعة اليتيم، فإن الملك يدوم مع العدل.",
+    "summary": "Devlet idaresinde adalet terazisine riayet, memurların zulmünü engellemek ve dünyalık ihsan kabul etmemek.",
+    "category": "Siyaset ve Adalet"
+  },
+  {
+    "id": 72,
+    "recipient": "Şam Valisi",
+    "location": "Şam",
+    "topic": "Vergilerde merhamet ve Ehl-i Beyt'e hürmet",
+    "arabic_excerpt": "بلدة الشام دار الأنبياء والأولياء، فلا تثقلوا على الرعية بالضرائب، وأكرموا السادة الأشراف.",
+    "summary": "Ağır vergilerle halkı ezmemek, seyyidlere ve ilim talebelerine ikramda bulunmak.",
+    "category": "Siyaset ve Adalet"
+  },
+  {
+    "id": 86,
+    "recipient": "Osmanlı Sadrazamı ve Devlet Ricali",
+    "location": "İstanbul (Dersaâdet)",
+    "topic": "İslâm birliği, devlete sadakat ve dâhili fitneler",
+    "arabic_excerpt": "إن بقاء دار الإسلام بالتمسك بكتاب الله وسنة رسوله، ونحن في محاريبنا ندعو للمسلمين بالنصر.",
+    "summary": "Fitneleri adalet ve takva ile teskin etmek; İslâm ordularının muzafferiyeti için teheccüd vakitlerinde dua.",
+    "category": "Devlet ve Birlik"
+  },
+  {
+    "id": 98,
+    "recipient": "Bütün Halife ve İhvana Umumi Hitap",
+    "location": "Genel",
+    "topic": "İstikametin fazileti ve mahviyet",
+    "arabic_excerpt": "الاستقامة خير من ألف كرامة. لا يفتح باب الحقيقة حتى يرى العبد نفسه مفلساً من كل عمل.",
+    "summary": "Uçmak ve suda yürümek hüner değildir; asıl hüner rızâ-i ilâhîden bir milim sapmamaktır.",
+    "category": "Genel İrşad"
+  },
+  {
+    "id": 105,
+    "recipient": "Müridlerin Manevî Hallerine Dair",
+    "location": "Şam",
+    "topic": "Rüyalar, keşifler ve mânevî sarhoşluk tehlikesi",
+    "arabic_excerpt": "ليست الغاية رؤية الأنوار والمنامات، بل الغاية رضا الله تعالى واتباع الشريعة.",
+    "summary": "Keşif ve kerâmetlere aldanmamak; bir zerre ihlaslı amelin binlerce rüyadan üstün olması.",
+    "category": "Seyr u Sülûk"
+  },
+  {
+    "id": 119,
+    "recipient": "İhvan Cemaatine",
+    "location": "Şam / Halep",
+    "topic": "Gıybet, haset ve kusur araştırmanın helak ediciliği",
+    "arabic_excerpt": "الغيبة والنميمة نار تحرق نور الذكر في القلوب، فاستروا عيوب إخوانكم كما يستر الليل.",
+    "summary": "Din kardeşinin ayıbını gece gibi örtmek; tefrikanın meclisteki mânevî feyzi yok etmesi.",
+    "category": "Uhuvvet ve Ahlak"
+  },
+  {
+    "id": 148,
+    "recipient": "Vasiyet ve İstiğfar",
+    "location": "Şam",
+    "topic": "Son nefes, tevazu ve istiğfar talebi",
+    "arabic_excerpt": "اجعلوا الاستغفار ديدنكم، وهذا خالد المسكين يرجو دعاءكم بختام الإيمان.",
+    "summary": "Bütün amellere rağmen nefsi kusurlu bilmek ve son nefeste hüsn-i hâtime niyazı.",
+    "category": "Vasiyet"
+  }
+]
